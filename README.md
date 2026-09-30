@@ -26,3 +26,16 @@ The pipeline is designed to provide actionable insights and operational efficien
 - **Tableau** – Business intelligence and dashboarding
 - **Google App Script** - low-code development platform that helps poll data from external databases into goole workspaces and dispense data into external downstream environments.
 <img width="1164" height="776" alt="Screenshot 2026-09-30 at 10 22 26" src="https://github.com/user-attachments/assets/7034152d-5ae4-47b0-94a0-e401af9fa3fb" />
+
+----
+🧱 dbt Models & Data Warehouse Design
+----
+**🟨 Dimension Tables (dim_*)**
+- `highest_lowest_valuation_dim :` an adjustable bucket that compares the current stock value with the record highest and lowest. It places the current stock in a tier in view of its value relative to 5 created buckets formed within the record highest and lowest stock records.
+- `average_valuation_dim :` compares current stock value with its position with regards to the average stock value and its standard deviation. It checks whether it is **Below** the subtraction of standard dev from average stock value, **above** their sum or **between** them.
+- `moving_avg_comparison_dim :` uses running average mean between 3 months and 6 months to check **bullish** and **bearish** alignments.
+
+**🟨 Factless Fact Tables (dim_*)**
+- `highest_lowest_stock_metric :` an adjustable bucket that compares the current stock value with the record highest and lowest. It places the current stock in a tier in view of its value relative to 5 created buckets formed within the record highest and lowest stock records.
+- `moving_average_stock_metric :` compares current stock value with its position with regards to the average stock value and its standard deviation. It checks whether it is **Below** the subtraction of standard dev from average stock value, **above** their sum or **between** them.
+- `stock_average_metric :` uses running average mean between 3 months and 6 months to check **bullish** and **bearish** alignments.
