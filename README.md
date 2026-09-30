@@ -77,6 +77,19 @@ DATA Reconciliation between warehouse google-sheets and telegram notifications
 - **Telegram showing its records :**
   <img width="1381" height="1000" alt="image" src="https://github.com/user-attachments/assets/8919258b-cbb6-452c-9d00-c8e49b85156b" />
 
+----
+✅ Testing & Documentation
+----
+Tests
+Applied across staging, dimension, intermediate and fact layers using dbt:
 
+Uniqueness and not null constraints on keys
+Accepted values for enums 
+Referential integrity between dimensions and facts
+
+
+----
+Documentation
+Generated using dbt docs, including table-level descriptions, column metadata, and lineage.
 
 
