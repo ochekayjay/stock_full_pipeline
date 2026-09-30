@@ -16,3 +16,12 @@ The pipeline is designed to provide actionable insights and operational efficien
 - **Data Marts**: Business-ready marts enable in-depth analysis across multiple functions.
 - **Visualization**: Tableau dashboard present interactive insights to business users.
 - **Data Alerts**: Stock values that breaks in or out of bucket gets registered on google-sheet for future auditing and reconciliation and also gets sent to notification channels like telegram
+
+----
+🛠️ Tech Stack
+----
+- **Event-bridge + Lambda Function** – Automated data ingestion from stock data sources
+- **Redshift** – Scalable cloud data warehouse
+- **Dbt** – Transformation, testing, documentation, and version control
+- **Tableau** – Business intelligence and dashboarding
+- **Google App Script** - low-code development platform that helps poll data from external databases into goole workspaces and dispense data into external downstream environments.
