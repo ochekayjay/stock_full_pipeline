@@ -35,7 +35,11 @@ The pipeline is designed to provide actionable insights and operational efficien
 - `average_valuation_dim :` compares current stock value with its position with regards to the average stock value and its standard deviation. It checks whether it is **Below** the subtraction of standard dev from average stock value, **above** their sum or **between** them.
 - `moving_avg_comparison_dim :` uses running average mean between 3 months and 6 months to check **bullish** and **bearish** alignments.
 
-**🟨 Factless Fact Tables (dim_*)**
-- `highest_lowest_stock_metric :` an adjustable bucket that compares the current stock value with the record highest and lowest. It places the current stock in a tier in view of its value relative to 5 created buckets formed within the record highest and lowest stock records.
-- `moving_average_stock_metric :` compares current stock value with its position with regards to the average stock value and its standard deviation. It checks whether it is **Below** the subtraction of standard dev from average stock value, **above** their sum or **between** them.
-- `stock_average_metric :` uses running average mean between 3 months and 6 months to check **bullish** and **bearish** alignments.
+**🟨 Factless Fact Tables**
+- `highest_lowest_stock_metric :` It accounts for the streaks a stock spend within the buckets formed from `highest_lowest_valuation_dim`. Particularly, highlighting the start_date and end_date a stock spends within the buckets, also noting the highest and lowest stock traded value within that window.
+- `moving_average_stock_metric :` It displays the streaks a stock spend between the buckets formed from `average_valuation_dim` whether it is **Below** ,**above** or **between** .
+- `stock_average_metric :` Checks the streaks whether stock falls in **bullish** or **bearish** alignments.
+
+**🟨 Source and Snapshot Tables**
+- `stock_live_table :` Cleaned data from yahoo finance.
+- `stock_snapshot_table :` Daily record on what buckets every stock holds before exporting that information to factless tables for streak padding and window showcasing
