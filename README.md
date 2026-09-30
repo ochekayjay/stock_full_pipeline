@@ -65,5 +65,18 @@ The pipeline is designed to provide actionable insights and operational efficien
 **Comparison between running stock values and record maximum per bucket :**
 <img width="1514" height="787" alt="image" src="https://github.com/user-attachments/assets/cd433c67-e631-42ea-b344-db57af779cc1" />
 
+----
+DATA Reconciliation between warehouse google-sheets and telegram notifications
+----
+-  This section is aimed to establish the credibility of the pipeline being responsible for the data materialization. The first complete chain of operation was registered in the 26th of september 2026 at 17:52:36 pm, we would see that time also maintained for AAPL stock on google sheet and telegram, NVDA stock was 2 seconds earlier because the pipeline hadnt been sompleted at the time. Other registered time down to the seconds aswell for the following days maintained same agreement. 
+
+- **AWS Step Function showing the date and successful completion of the pipelines :**
+  <img width="1680" height="737" alt="image" src="https://github.com/user-attachments/assets/2b4ddbe0-b17c-418f-854f-67a925d3bc23" />
+- **Google sheets showing its records :**
+  <img width="1680" height="801" alt="image" src="https://github.com/user-attachments/assets/c6470367-ba80-4bb2-b3d8-7a31c70efb6e" 
+- **Telegram showing its records :**
+  <img width="1381" height="1000" alt="image" src="https://github.com/user-attachments/assets/8919258b-cbb6-452c-9d00-c8e49b85156b" />
+
+
 
 
