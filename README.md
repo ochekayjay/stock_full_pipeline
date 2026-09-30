@@ -11,7 +11,7 @@ The pipeline is designed to provide actionable insights and operational efficien
 ----
 📌 Project Overview
 ----
-Data Ingestion: Fivetran automates the ingestion of 8 core datasets from transactional systems into BigQuery.
-Transformation: dbt performs modular data modeling using snapshots, star schema design, and incremental materializations.
-Data Marts: Business-ready marts enable in-depth analysis across multiple functions.
-Visualization: Tableau dashboard present interactive insights to business users.
+**Data Ingestion**: Fivetran automates the ingestion of 8 core datasets from transactional systems into BigQuery.
+**Transformation**: dbt performs modular data modeling using snapshots, star schema design, and incremental materializations.
+**Data Marts**: Business-ready marts enable in-depth analysis across multiple functions.
+**Visualization**: Tableau dashboard present interactive insights to business users.
