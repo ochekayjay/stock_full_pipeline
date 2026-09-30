@@ -25,3 +25,4 @@ The pipeline is designed to provide actionable insights and operational efficien
 - **Dbt** – Transformation, testing, documentation, and version control
 - **Tableau** – Business intelligence and dashboarding
 - **Google App Script** - low-code development platform that helps poll data from external databases into goole workspaces and dispense data into external downstream environments.
+<img width="1164" height="776" alt="Screenshot 2026-09-30 at 10 22 26" src="https://github.com/user-attachments/assets/7034152d-5ae4-47b0-94a0-e401af9fa3fb" />
