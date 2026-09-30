@@ -8,8 +8,9 @@ This project presents an end-to-end, autonomous, and scalable data pipeline for 
 
 The pipeline is designed to provide actionable insights and operational efficiency, helping the investors make faster, smarter, data-driven decisions.
 
-
+----
 📌 Project Overview
+----
 Data Ingestion: Fivetran automates the ingestion of 8 core datasets from transactional systems into BigQuery.
 Transformation: dbt performs modular data modeling using snapshots, star schema design, and incremental materializations.
 Data Marts: Business-ready marts enable in-depth analysis across multiple functions.
