@@ -73,7 +73,7 @@ DATA Reconciliation between warehouse google-sheets and telegram notifications
 - **AWS Step Function showing the date and successful completion of the pipelines :**
   <img width="1680" height="737" alt="image" src="https://github.com/user-attachments/assets/2b4ddbe0-b17c-418f-854f-67a925d3bc23" />
 - **Google sheets showing its records :**
-  <img width="1680" height="801" alt="image" src="https://github.com/user-attachments/assets/c6470367-ba80-4bb2-b3d8-7a31c70efb6e" 
+  <img width="1680" height="801" alt="image" src="https://github.com/user-attachments/assets/c6470367-ba80-4bb2-b3d8-7a31c70efb6e" />
 - **Telegram showing its records :**
   <img width="1381" height="1000" alt="image" src="https://github.com/user-attachments/assets/8919258b-cbb6-452c-9d00-c8e49b85156b" />
 
