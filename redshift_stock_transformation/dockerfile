@@ -1,0 +1,38 @@
+# ---- Base ----
+# Slim, not alpine: dbt's Python deps (psycopg2, redshift-connector) rely on
+# compiled C extensions that build cleanly against Debian's glibc; alpine's
+# musl libc causes painful, slow-to-build wheel mismatches for these packages.
+FROM python:3.11-slim AS base
+
+# ---- System deps ----
+# build-essential + libpq-dev only needed to compile the connector wheels;
+# curl is optional, useful for debugging connectivity from inside a Fargate task.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    libpq-dev \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /usr/app/dbt
+
+# ---- Python deps ----
+# Split from the project copy below so Docker's layer cache holds this layer
+# steady across ordinary model/macro changes — only rebuilds when requirements
+# actually change, keeping iteration fast.
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# ---- Project files ----
+COPY . .
+
+# profiles.yml lives here, not baked with real values — see note below on
+# how credentials actually reach it at runtime via ECS task-def secrets.
+ENV DBT_PROFILES_DIR=/usr/app/dbt
+
+# No CMD — Fargate's "Run new task" (or EventBridge Scheduler target) supplies
+# the actual dbt command as a container override, e.g. ["dbt", "run"],
+# ["dbt", "test"], ["dbt", "run", "--select", "stock_average_metric"].
+# This keeps one image reusable across every scheduled dbt command rather
+# than baking a single fixed command into the image.
+ENTRYPOINT ["dbt"]
+CMD ["show", "--select", "stock_live_table"].

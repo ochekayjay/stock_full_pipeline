@@ -1,0 +1,9 @@
+# requirements.txt
+pandas
+yfinance
+curl_cffi
+psycopg2-binary
+sqlalchemy
+boto3
+python-dotenv
+pyyaml

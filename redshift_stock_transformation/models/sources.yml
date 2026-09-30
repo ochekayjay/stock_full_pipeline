@@ -1,0 +1,16 @@
+# models/staging/sources.yml
+sources:
+  - name: raw
+    schema: stock_pipeline
+    tables:
+      - name: stock_staging_table
+        description: "Raw OHLCV landing table, written by ingestion Lambda"
+      
+      - name: highest_lowest_valuation_dim
+        description: "dimensional table for high/low financial valuation metric"
+
+      - name: average_valuation_dim
+        description: "dimensional table for average valuation metric"
+
+      - name: moving_avg_comparison_dim
+        description: "dimensional table for rolling financial valuation comparison metric"

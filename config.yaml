@@ -1,0 +1,5 @@
+tickers:
+  values : ['NVDA', 'AAPL']
+DB:
+  SCHEMA: 'stock_pipeline'
+  STAGING_TABLE: 'stock_staging_table'
