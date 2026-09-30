@@ -45,3 +45,25 @@ The pipeline is designed to provide actionable insights and operational efficien
 - `stock_snapshot_table :` Daily record on what buckets every stock holds before exporting that information to factless tables for streak padding and window showcasing
 <img width="3128" height="3568" alt="image" src="https://github.com/user-attachments/assets/d99ccb05-2e3b-4c44-8888-a6fff06b98e5" />
 
+----
+📊 Tableau Dashboard
+----
+**Daily Stock Tracking :**
+- This captures the daily stock tracking, directly off the stock_live_table
+  <img width="1514" height="674" alt="image" src="https://github.com/user-attachments/assets/79b2979f-1c3b-4498-b92b-00505b7ef2a9" />
+  
+**Buckets Illustration for highest_lowest_valuation_dim :**
+- Helps illustrate what the buckets are and how stable the stock has been between two buckets for recent years, attractive for investments
+<img width="1604" height="744" alt="image" src="https://github.com/user-attachments/assets/86ffe214-f767-4dc5-9807-00fbcbf37076" />
+
+
+**Window streak illustration within buckets :**
+-  Helps traders understand how windowed data for stock valuation helps produce a failure-proof investment scheme.
+<img width="1628" height="766" alt="image" src="https://github.com/user-attachments/assets/a64e0210-9212-4da4-82f3-3716adbc2c90" />
+
+
+**Comparison between running stock values and record maximum per bucket :**
+<img width="1514" height="787" alt="image" src="https://github.com/user-attachments/assets/cd433c67-e631-42ea-b344-db57af779cc1" />
+
+
+
