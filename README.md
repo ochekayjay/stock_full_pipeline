@@ -43,3 +43,5 @@ The pipeline is designed to provide actionable insights and operational efficien
 **🟨 Source and Snapshot Tables**
 - `stock_live_table :` Cleaned data from yahoo finance.
 - `stock_snapshot_table :` Daily record on what buckets every stock holds before exporting that information to factless tables for streak padding and window showcasing
+<img width="3128" height="3568" alt="image" src="https://github.com/user-attachments/assets/d99ccb05-2e3b-4c44-8888-a6fff06b98e5" />
+
