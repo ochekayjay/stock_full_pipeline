@@ -10,7 +10,7 @@ The tables covers two different stocks namely :
 - Apple
 
   
-And 2 different table case scenarios for each stock :
+The different table case scenarios for each stock :
 ---
 - **Purchasing data breakdown** : This includes critical decisions that a trader would have made within that bucket streak relative to the decision the trader actually made in regards to buying shares. For instance, it checks the drawdown in percentage between the amount the trader bought his shares at and the minimum value the stock recorded within that streak, the date when both events took place are also registered for traders and quants to judge trading trajectories by.
 - **Sales data breakdown** : This includes critical decisions that a trader would have made within that streak period relative to the decision the trader actually made in regards to selling shares. For instance it checks the potential profit increment in percentage between the value the trader sold his stocks at and the value highest value the stock recorded in that streak window
