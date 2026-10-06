@@ -35,4 +35,25 @@ For Sales Data breakdown we have the following columns
 - **max_sale_date** : The date this selling price **max_window_sale** was recorded.
 - **potential_increment %** : Percentage of the difference between **max_window_sale** and **sale_price** divided by **sale_price** .
 
+----
+Data Display
+---
+- **Purchasing data breakdown Table for APPLE :**
+<img width="1060" height="284" alt="image" src="https://github.com/user-attachments/assets/d695ea0f-7ee8-44a3-a145-6ed67693da92" />
+row index 5 shows the maximum_draw_down across the different streaks to which the AAPL stocks were purchased at, it had a 14.164% draw-down from when the stocks were bought.
+
+- **Purchasing data breakdown Table for NVIDIA :**
+<img width="1053" height="447" alt="image" src="https://github.com/user-attachments/assets/614f1325-7859-45c9-a0ca-781260ca81b1" />
+row index 6 shows the maximum_draw_down across the different streaks to which the NVDA stocks were purchased at, it had a 19.60% draw-down from when the stocks were bought.
+
+- **Sales data breakdown Table for APPLE :**
+<img width="1053" height="271" alt="image" src="https://github.com/user-attachments/assets/7f249513-3b45-4012-8356-ca8eeb365709" />
+row index 3 shows the streak that could have yielded the maximum profit yield if trader could have delayed sales on their AAPL shares, it had a 41.7% increment on what it was sold at.
+
+- **Sales data breakdown Table for NVIDIA :**
+<img width="1053" height="437" alt="image" src="https://github.com/user-attachments/assets/4bbb9d55-11c5-47e9-b4c8-15dafe58a666" />
+row index 0 shows the streak that could have yielded the maximum profit yield if trader could have delayed sales on their NVDA shares, it had a 60% increment on what it was sold at.
+
+
+
 
